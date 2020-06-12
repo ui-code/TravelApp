@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App - Page 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body {
+        background: url(bg.jpg);
+        background-size: cover;
+    }
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .container {
+        width: 310px;
+        height: 600px;
+        border: 5px solid black;
+        border-radius: 15px;
+        background: linear-gradient(#006168c4, #bc6659c4, #122f25c4), url(bg.jpg);
+        background-size: cover;
+        overflow: hidden;
+    }
+    input {
+        border-radius: 30px;
+        height: 35px;
+        border: 1px solid lightgray;
+        outline: none;
+        font-size: 12px;
+    }
+
+    img.profile {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid white;
+        z-index: 1;
+    }
+
+    span.profile-name {
+        font-size: 24px;
+    }
+
+    span.profile-booking {
+        color: #b5b5b5;
+        font-size: 14px;
+    }
+
+    div.booking {
+        background-color: #f1f1f1;
+        border-radius: 40px;
+    }
+
+    span.profile-item {
+        color:#3b3b3b;
+        font-size: 14px;
+    }
+
+    div.form-bg {
+        background-color: white;
+        border-radius: 30px;
+    }
+
+    div.bottom-menu {
+        background-color: #252525;
+        color: white;
+    }
+
+    div.menu-button {
+        background: linear-gradient(to right, #eb7873, #ee9578);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+
+    div.notification {
+        width: 8px;
+        height: 8px;
+        background-color: #ea756d;
+        top: -18px;
+        left: 10px;
+        border-radius: 50%;
+    }
+
+    .fa.fa-search {
+        color: #a6a6a6;
+    }
+</style>
+<body>
+    <div class="center">
+        <div class="container d-flex flex-column justify-content-start">
+            <div class="row mt-5 mb-3">
+                <div class="col-12">
+                    <input type="text" class="w-100"/>
+                    <div style="position: absolute; right: 25px; top: 5px;">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <img class="profile" src="https://image.shutterstock.com/image-photo/face-blonde-happy-bride-before-600w-546759520.jpg"/>
+                </div>
+            </div>
+    
+            <div class="row mb-auto mx-1 position-relative" style="top: -50px">
+                <div class="col-12 form-bg pb-3">
+                    <div class="d-flex flex-column justify-content-start align-items-center mt-5 mb-3">
+                        <span class="profile-name">Linda Sheldon</span>
+                        <span class="profile-booking">Booking: A247LON18</span>
+                    </div>
+                    <div class="booking d-flex flex-row justify-content-between align-items-center mb-2 p-3">
+                        <span class="profile-item">Current booking</span>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="booking d-flex flex-row justify-content-between align-items-center mb-2 p-3">
+                        <span class="profile-item">Previous booking</span>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="booking d-flex flex-row justify-content-between align-items-center mb-2 p-3">
+                        <span class="profile-item">My Profile</span>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-12 bottom-menu d-flex flex-row justify-content-between">
+                    <i class="py-3 fa fa-list-ul" aria-hidden="true"></i>
+                    <i class="py-3 fa fa-user" aria-hidden="true"></i>
+                    <div style="top: -30px;"
+                    class="menu-button d-flex justify-content-center align-items-center position-relative">
+                        <i class="py-3 fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <i class="py-3 fa fa-bell" aria-hidden="true">
+                        <div class="position-relative notification">
+    
+                        </div>
+                    </i>
+                    <i class="py-3 fa fa-commenting" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
